@@ -22,19 +22,22 @@ export class Comp1Component {
       x: 0,
       y: 5,
       width: 141,
-      height: 111
+      height: 111,
+      cssClass: 'area'
     },  {
       name: '接待區',
       x: 145,
       y: 6,
       width: 113,
-      height: 106
+      height: 106,
+      cssClass: 'area'
     }, {
       name: 'waitting room',
       x: 264,
       y: 4,
       width: 240,
-      height: 111
+      height: 111,
+      cssClass: 'areaWarnning'
     }
   ]
 

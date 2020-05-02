@@ -32,6 +32,10 @@ export class ImageMapComponent implements OnInit {
     };
   }
 
+  getAreaClass(coordinate: ImageMapCoordinate){
+    return coordinate.cssClass;
+  }
+
   onAreaClick(coordinate) {
     this.onClick.emit(coordinate);
   }
@@ -69,6 +73,7 @@ export class ImageMapCoordinate {
   width: number = 100
   height: number = 100
   name?: string
+  cssClass: string
 
   constructor(init?: Partial<ImageMapCoordinate>) {
     Object.assign(this, init);
