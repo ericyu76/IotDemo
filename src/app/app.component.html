@@ -6,8 +6,7 @@
     (selectedTabChange)="tabChanged($event)"
   >
     <mat-tab *ngFor="let tab of tabs; let tabIndex = index">
-      <ng-template mat-tab-label
-        >{{ tab.title }}
+      <ng-template mat-tab-label>{{ tab.title }}
       </ng-template>
 
       <div>

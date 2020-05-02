@@ -10,6 +10,7 @@ import { ContentContainerDirective } from "./content-container.directive";
 import { TabService } from "./tab.service";
 import { Comp1Component } from "./components/comp1.component";
 import { Comp2Component } from "./components/comp2.component";
+import { ImageMapComponent } from "./components/image-map/image-map.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Comp2Component } from "./components/comp2.component";
     TabContentComponent,
     ContentContainerDirective,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
+    ImageMapComponent
   ],
   imports: [
     BrowserModule,
