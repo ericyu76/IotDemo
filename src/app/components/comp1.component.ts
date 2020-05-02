@@ -1,11 +1,18 @@
 import { Component, Input } from "@angular/core";
 import { ImageMapCoordinate } from './image-map/image-map.component';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
+interface DialogData {
+  email: string;
+}
 
 @Component({
   templateUrl: "./comp1.component.html"
 })
 export class Comp1Component {
   @Input() data;
+
+  constructor(public dialog: MatDialog) {}
 
   image: string = './assets/floor1.jpg';
   coordinates: ImageMapCoordinate[] = [
@@ -32,7 +39,14 @@ export class Comp1Component {
 
   getClick(coordinate: ImageMapCoordinate) {
     console.log(`Clicked on ${coordinate.name}`);
+    // const dialogRef = this.dialog.open(ModalComponent, {
+    //   width: '300px',
+    //   data: {email: coordinate.name}
+    // });
 
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(result);
+    // });
   }
 
 }
