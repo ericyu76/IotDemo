@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { ImageMapCoordinate } from './image-map/image-map.component';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { ModalComponent } from '../../modal/modal.component';
 
 interface DialogData {
   email: string;
@@ -39,14 +40,14 @@ export class Comp1Component {
 
   getClick(coordinate: ImageMapCoordinate) {
     console.log(`Clicked on ${coordinate.name}`);
-    // const dialogRef = this.dialog.open(ModalComponent, {
-    //   width: '300px',
-    //   data: {email: coordinate.name}
-    // });
+    const dialogRef = this.dialog.open(ModalComponent, {
+      width: '300px',
+      data: {email: coordinate.name}
+    });
 
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log(result);
-    // });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+    });
   }
 
 }

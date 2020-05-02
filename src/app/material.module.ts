@@ -1,6 +1,6 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, Input } from '@angular/core';
 
-import { MatDialogModule, MatFormFieldModule, MatButtonModule, MatInputModule,  } from '@angular/material';
+import { MatDialogModule, MatFormFieldModule, MatButtonModule, MatInputModule  } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

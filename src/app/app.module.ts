@@ -31,6 +31,7 @@ import { Comp2Component } from "./components/comp2.component";
     MatTabsModule,
     MatButtonModule,
     FormsModule,
+    MaterialModule
   ],
   providers: [TabService],
   bootstrap: [AppComponent],
