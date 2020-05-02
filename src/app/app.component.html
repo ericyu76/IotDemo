@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <h2>IoT 可攜式居家防護監控系統</h2>
+  <mat-tab-group
+    class="main-tab-group mt-2"
+    [selectedIndex]="selectedTab"
+    (selectedTabChange)="tabChanged($event)"
+  >
+    <mat-tab *ngFor="let tab of tabs; let tabIndex = index">
+      <ng-template mat-tab-label
+        >{{ tab.title }}
+      </ng-template>
+
+      <div>
+        <app-tab-content [tab]="tab"></app-tab-content>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>
