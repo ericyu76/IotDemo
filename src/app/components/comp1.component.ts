@@ -40,17 +40,22 @@ export class Comp1Component {
 
   getClick(coordinate: ImageMapCoordinate) {
     console.log(`Clicked on ${coordinate.name}`);
+    this.iotData1.location = coordinate.name;
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '300px',
-      data: {email: coordinate.name}
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(result);
+      data: this.iotData1
     });
   }
 
+  iotData1 = {
+    location: "",
+    pm25: 12.1,
+    tempreture: 12.2,
+    hum: 34.3,
+  }
+
 }
+
 
 
     // <area target="" alt="office4" title="office4" href="" coords="0,5,141,111" shape="rect">

@@ -3,7 +3,10 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 
 interface DialogData {
-  email: string;
+  location: string;
+  pm25: number;
+  tempreture: number;
+  hum: number;
 }
 
 @Component({
