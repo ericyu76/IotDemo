@@ -8,9 +8,9 @@ import { BehaviorSubject } from "rxjs";
 @Injectable()
 export class TabService {
   public tabs: Tab[] = [
-    new Tab(Comp1Component, "房間設計 1", { parent: "AppComponent" }),
-    new Tab(Comp2Component, "房間設計 2", { parent: "AppComponent" }),
-    new Tab(Comp3Component, "房間設計 3", { parent: "AppComponent" })
+    new Tab(Comp1Component, "辦公室", { parent: "AppComponent" }),
+    new Tab(Comp2Component, "家庭", { parent: "AppComponent" }),
+    new Tab(Comp3Component, "大樓", { parent: "AppComponent" })
   ];
 
   public tabSub = new BehaviorSubject<Tab[]>(this.tabs);
