@@ -1,6 +1,6 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { ImageMapCoordinate } from './image-map/image-map.component';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatButton} from '@angular/material';
 import { ModalComponent } from '../../modal/modal.component';
 
 interface DialogData {
@@ -107,6 +107,7 @@ export class Comp1Component {
   iotData1 = {
     location: "",
     pm25: 12.1,
+    co2:10,
     tempreture: 12.2,
     hum: 34.3,
     gas: 0,
@@ -115,6 +116,7 @@ export class Comp1Component {
   iotData2 = {
     location: "",
     pm25: 99,
+    co2:100,
     tempreture: 12.2,
     hum: 34.3,
     gas: 0,

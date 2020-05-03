@@ -5,6 +5,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 interface DialogData {
   location: string;
   pm25: number;
+  co2: number;
   tempreture: number;
   hum: number;
   gas: number;
@@ -12,8 +13,7 @@ interface DialogData {
 
 @Component({
   selector: 'app-modal',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  templateUrl: './modal.component.html'
 })
 export class ModalComponent implements OnInit {
 

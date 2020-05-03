@@ -79,6 +79,7 @@ export class Comp3Component {
   iotData1 = {
     location: "",
     pm25: 12.1,
+    co2:10,
     tempreture: 12.2,
     hum: 34.3,
     gas: 40,
@@ -87,6 +88,7 @@ export class Comp3Component {
   iotData2 = {
     location: "",
     pm25: 12.1,
+    co2:100,
     tempreture: 12.2,
     hum: 34.3,
     gas: 100.0,
