@@ -15,7 +15,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     <area target="" alt="living" title="living" href="" coords="" shape="rect">
 ```
 
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -39,3 +38,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+## 測試
+1. search 打  cmd
+2. > cd C:\Users\ryany\Documents\htmlproject\iotDemo
+3. > ng serve
+4. 查看結果 http://localhost:4200/
+
+
+## 編輯資料
+1. search 打 sublime Text3,
+2. Open Folder... 選 C:\Users\ryany\Documents\htmlproject\iotDemo
+3. 檔案都在 src 目錄
+
+## 改資料
+1. 加一種資料
+   1. comp2.component.ts 增加 gas
+   2. modal.component.ts 增加 gas: number
+
+## deploy to github
+
+1. ng add angular-cli-ghpages
+2. ng deploy --base-href=ng-iot-demo

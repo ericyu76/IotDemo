@@ -90,17 +90,34 @@ export class Comp1Component {
   getClick(coordinate: ImageMapCoordinate) {
     console.log(`Clicked on ${coordinate.name}`);
     this.iotData1.location = coordinate.name;
+
+    let showData = this.iotData1;
+    if(coordinate.cssClass === 'areaWarnning'){
+      showData = this.iotData2;
+    }
+
+
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '300px',
-      data: this.iotData1
+      data: showData
     });
   }
+
 
   iotData1 = {
     location: "",
     pm25: 12.1,
     tempreture: 12.2,
     hum: 34.3,
+    gas: 0,
+  }
+
+  iotData2 = {
+    location: "",
+    pm25: 99,
+    tempreture: 12.2,
+    hum: 34.3,
+    gas: 0,
   }
 
 }

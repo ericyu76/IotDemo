@@ -7,6 +7,7 @@ interface DialogData {
   pm25: number;
   tempreture: number;
   hum: number;
+  gas: number;
 }
 
 @Component({
