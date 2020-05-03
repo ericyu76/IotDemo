@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject, Input } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatCard} from '@angular/material';
 
 
 interface DialogData {
@@ -13,7 +13,8 @@ interface DialogData {
 
 @Component({
   selector: 'app-modal',
-  templateUrl: './modal.component.html'
+  templateUrl: './modal.component.html',
+  styleUrls: ["./modal.component.css"]
 })
 export class ModalComponent implements OnInit {
 

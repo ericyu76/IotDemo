@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { ImageMapCoordinate } from './image-map/image-map.component';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
-import { ModalComponent } from '../../modal/modal.component';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA, MatCard} from '@angular/material';
+import { ModalComponent } from './modal/modal.component';
 
 
 @Component({

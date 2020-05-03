@@ -3,9 +3,8 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import { MatTabsModule, MatButtonModule } from "@angular/material";
+import { MatDialogModule, MatTabsModule, MatButtonModule, MatCardModule } from '@angular/material';
 
-import { MaterialModule } from './material.module';
 
 import { AppComponent } from "./app.component";
 import { TabContentComponent } from "./tab-content.component";
@@ -15,7 +14,7 @@ import { ImageMapComponent } from "./components/image-map/image-map.component";
 import { Comp1Component } from "./components/comp1.component";
 import { Comp2Component } from "./components/comp2.component";
 import { Comp3Component } from "./components/comp3.component";
-// import { ModalComponent } from "../modal/modal.component";
+import { ModalComponent } from "./components/modal/modal.component";
 
 @NgModule({
   declarations: [
@@ -25,19 +24,18 @@ import { Comp3Component } from "./components/comp3.component";
     Comp1Component,
     Comp2Component,
     Comp3Component,
-    ImageMapComponent
+    ImageMapComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatTabsModule,
-    MatButtonModule,
     FormsModule,
-    MaterialModule
+    MatDialogModule, MatTabsModule, MatButtonModule, MatCardModule  
   ],
   providers: [TabService],
   bootstrap: [AppComponent],
   entryComponents: [Comp1Component, Comp2Component, 
-    Comp3Component]
+    Comp3Component, ModalComponent]
 })
 export class AppModule {}

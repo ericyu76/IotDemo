@@ -1,0 +1,12 @@
+mat-card {
+	pdding: 10px;
+	margin:  5px;
+}
+
+.mat-card-header {
+	height: 20px;
+}
+
+.mat-diaglog-title {
+	margin: 0 0 0px;
+}
