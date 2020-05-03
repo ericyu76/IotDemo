@@ -14,6 +14,7 @@ import { TabService } from "./tab.service";
 import { ImageMapComponent } from "./components/image-map/image-map.component";
 import { Comp1Component } from "./components/comp1.component";
 import { Comp2Component } from "./components/comp2.component";
+import { Comp3Component } from "./components/comp3.component";
 // import { ModalComponent } from "../modal/modal.component";
 
 @NgModule({
@@ -23,6 +24,7 @@ import { Comp2Component } from "./components/comp2.component";
     ContentContainerDirective,
     Comp1Component,
     Comp2Component,
+    Comp3Component,
     ImageMapComponent
   ],
   imports: [
@@ -35,6 +37,7 @@ import { Comp2Component } from "./components/comp2.component";
   ],
   providers: [TabService],
   bootstrap: [AppComponent],
-  entryComponents: [Comp1Component, Comp2Component]
+  entryComponents: [Comp1Component, Comp2Component, 
+    Comp3Component]
 })
 export class AppModule {}
